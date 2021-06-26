@@ -20,6 +20,6 @@ public class TestClass extends AbstractTestNGSpringContextTests {
     @Test
     void runSampleTest() {
         int b = helloWorldService.getValueOfB();
-        Assert.assertEquals(a*b,50,"a=5, b=10. Their multiplication should be 50");
+        Assert.assertEquals(a * b, 50, "a=5, b=10. Their multiplication should be 50");
     }
 }

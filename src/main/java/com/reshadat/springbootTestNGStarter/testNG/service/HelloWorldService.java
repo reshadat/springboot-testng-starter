@@ -18,7 +18,7 @@ public class HelloWorldService implements InitializingBean, DisposableBean {
     }
 
     @Override
-    public void afterPropertiesSet(){
+    public void afterPropertiesSet() {
         String result = "Anything you do in afterPropertiesSet will run only once, just after the initialization of bean properties";
         System.out.println(result);
 
