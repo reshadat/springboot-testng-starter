@@ -5,10 +5,10 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Service;
 
 @Service
-public class HelloWorldService implements InitializingBean, DisposableBean {
+public class SubtractionService implements InitializingBean, DisposableBean {
 
-    public int getValueOfB() {
-        return 10;
+    public int subtract(int a, int b) {
+        return a-b;
     }
 
     @Override

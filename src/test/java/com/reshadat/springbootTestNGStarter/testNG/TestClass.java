@@ -1,6 +1,6 @@
 package com.reshadat.springbootTestNGStarter.testNG;
 
-import com.reshadat.springbootTestNGStarter.testNG.service.HelloWorldService;
+import com.reshadat.springbootTestNGStarter.testNG.service.SubtractionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,12 +14,15 @@ public class TestClass extends AbstractTestNGSpringContextTests {
     @Value("${valueOfA}")
     int a;
 
+    @Value("${valueOfB}")
+    int b;
+
     @Autowired
-    HelloWorldService helloWorldService;
+    SubtractionService subtractionService;
 
     @Test
     void runSampleTest() {
-        int b = helloWorldService.getValueOfB();
-        Assert.assertEquals(a * b, 50, "a=5, b=10. Their multiplication should be 50");
+        int result = subtractionService.subtract(a,b);
+        Assert.assertEquals(result, 3, "a=5, b=2. Their subtraction should be 3");
     }
 }

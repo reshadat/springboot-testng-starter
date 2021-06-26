@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.reshadat.springbootTestNGStarter</groupId>
-    <artifactId>testNG</artifactId>
+    <artifactId>testNGSpringBootStarter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Springboot testNG starter</name>
     <description>Demo project for Spring Boot and TestNG</description>
